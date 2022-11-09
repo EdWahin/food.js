@@ -303,8 +303,12 @@ window.addEventListener('DOMContentLoaded', () => {
 
     //Fetch API
 
-    fetch('https://jsonplaceholder.typicode.com/todos/1')
-        .then(response => response.json())
-        .then(json => console.log(json));
+    // fetch('https://jsonplaceholder.typicode.com/todos/1')
+    //     .then(response => response.json())
+    //     .then(json => console.log(json));
+
+    fetch('http://localhost:3000/menu')
+        .then(data => data.json())
+        .then(res => console.log(res));
 
 });
